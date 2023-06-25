@@ -1,0 +1,58 @@
+{
+	// Place your reacthooks workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"useState Hook": {
+		"scope": "javascript,typescript",
+		"prefix": "usestate",
+		"body": [
+			"const [${1:state},set${1:state}] = useState(${2:initialState});",
+			"$3"
+		],
+		"description": "For using the useState hook in React"
+	},
+
+	"useEffect Hook": {
+		"scope": "javascript,typescript",
+		"prefix": "useefffect",
+		"body": [
+			"useEffect(()=>{",
+			         "     $1",
+             "},[${2:dependency}])"
+		],
+		"description": "For using the useEfffect hook in React"
+	},
+
+	"useRef Hook": {
+		"scope": "javascript,typescript",
+		"prefix": "useref",
+		"body": [
+			"const ${1:ref} = useRef(${2:initialvalue})"
+		],
+		"description": "For using the useRef hook in React"
+	},
+
+	"useReducer Hook": {
+		"scope": "javascript,typescript",
+		"prefix": "usereducer",
+		"body": [
+			"const [${1:state},${2:dispatch}] = useReducer(${3:reducer} ,${4:initialvalue})"
+		],
+		"description": "For using the useReducer hook in React"
+	},
+
+	"useMemo Hook": {
+		"scope": "javascript,typescript",
+		"prefix": "usememo",
+		"body": [
+			"const ${1:name} =  useMemo(()=>{",
+			"  return $2",
+	"},[${3:dependency}])"
+		],
+		"description": "For using the useMemo hook in React"
+	}
+}
