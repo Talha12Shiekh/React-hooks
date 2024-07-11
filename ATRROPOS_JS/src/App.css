@@ -1,0 +1,116 @@
+.center {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.card {
+  width: 30vw;
+  aspect-ratio: 1;
+  background-color: burlywood;
+  padding: 1em;
+}
+
+.card p {
+  font-size: 1.3rem;
+}
+
+.card .btns{
+  margin-top: 3rem;
+  gap: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.attropos_card{
+  transition: all 0.5s;
+}
+/* 
+.attropos_card:hover{
+  box-shadow: 5px 5px 50px 25px blue;
+} */
+
+.description{
+  font-size: 1.5rem;
+  text-align: center;
+  animation-delay: 2s;
+  font-family: system-ui;
+  animation: autoRightLeftAnimation;
+  animation-timeline: view(50% auto);
+}
+
+.heading{
+  animation: autoLeftRightAnimation;
+  animation-timeline: view(50% auto);
+  text-align: center;
+  font-family: system-ui;
+}
+
+.o-h{
+  overflow-x: hidden;
+}
+
+/* .autoLeftAndRight {
+  animation: autoRotateAnimation;
+  animation-timeline: view(50% auto);
+} */
+
+/* @keyframes autoRotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes autoLeftRightAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-200px) ;
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%) ;
+  }
+}
+@keyframes autoRightLeftAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(200px) ;
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%) ;
+  }
+}
+
+.box{
+  width: 10vw;
+  aspect-ratio: 1;
+  border: 3px solid grey;
+  border-radius: 10px;
+}
+
+.parentBox{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 90vh;
+}
+
+.autoScale{
+  animation: autoScaleAnimation;
+  animation-timeline: view(50% auto);
+}
+
+@keyframes autoScaleAnimation {
+  from {
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
